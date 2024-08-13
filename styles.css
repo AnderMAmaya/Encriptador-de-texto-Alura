@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Inter:ital,opsz,wght@0,14..32,100..900&display=swap" rel="stylesheet');
+
+:root {
+    --color-primario: #000;
+    --color-secundario: #ffffff;
+    --color-terciario: #00ffff;
+    --fuente-titulos: "Libre Baskerville", serif;
+    --fuente-parrafo: "Cormorant Garamond", serif;
+}
+
+body {
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-parrafo);
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    transform: scale(relative); /* Aumenta el tamaño general */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    max-width: auto;
+    margin: 0 auto;
+    padding-bottom: 5px;
+    flex: relative; /* Permite que el contenedor principal ocupe el espacio disponible */
+    
+}
+
+.titulo {
+    color: var(--color-terciario);
+    font-family: var(--fuente-titulos);
+    text-align: center;
+    margin-bottom: relative;
+    font-size:2rem;
+}
+
+.img-text-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.cuadro__Texto, #outPutText {
+    width: calc(50%  1rem); /* Asegura que ambos cuadros sean del mismo ancho */
+    height: 9.2rem; /* Asegura que ambos cuadros sean de la misma altura */
+    padding: 3.5rem;
+    font-size: 1rem;
+    font-family: var(--fuente-parrafo);
+    box-sizing: border-box;
+    border-radius: 1rem; 
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+    margin: 0 0.8rem; /* Añade un margen horizontal entre la imagen, el cuadro de entrada y el de salida */
+}
+
+#outPutText {
+    display: none; /* Mantén el cuadro oculto hasta que se muestre el resultado */
+}
+
+.Imagen-buho1 {
+    width: 9.50rem; /* Ajusta el tamaño de la imagen */
+    height: auto;
+    margin-right: 1.25rem; /* Espacio entre la imagen y el cuadro de texto */
+    border-radius: 1rem;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem; /* Espacio entre los botones */
+    padding: 2%;
+}
+
+
+.botones button {
+    padding: 0.8rem 20px;
+    font-size: 1rem;
+    border: 4px outset var(--color-terciario);
+    border-radius: 0.8rem;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.botones button:hover {
+    background-color: var(--color-terciario);
+    color: var(--color-primario);
+    border-color: chocolate;
+}
+
+textarea[readonly] {
+    display: none; /* Oculta inicialmente el cuadro de salida */
+}
+
+textarea[readonly].visible {
+    display: block; /* Muestra el cuadro de salida cuando sea necesario */
+}
+footer{
+    position:relative;/* Coloca el pie de página en una posición absoluta respecto a su contenedor */
+    bottom: 20px;/* Coloca el pie de página en la parte inferior del contenedor */
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--color-terciario);
+    width: 100%;
+    padding: 0.8rem;/* Espacio interno para el pie de página */
+    margin-top: 20px;
+    font-family: var(--fuente-titulos);
+
+}
+/* Media Query para dispositivos móviles */
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .img-text-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadro__Texto, #outPutText {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .botones {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

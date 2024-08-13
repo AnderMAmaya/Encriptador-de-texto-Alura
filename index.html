@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Encriptador de Textos Alura</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="titulo">
+    <h1>Bienvenidos al <br>Encriptador de Textos</br></h1>
+    </div>
+
+    <div class="container">
+      <div class="img-text-container">
+        <textarea
+          id="inputText"
+          placeholder="Ingresa el texto "
+          class="cuadro__Texto"
+        ></textarea>
+        <div class="resultado-container">
+          <img
+            class="Imagen-buho1"
+            src="./assets/Designer (1).jpeg"
+            alt="Imagen de un buho con una lupa IA"
+            id="Imagen-buho"
+          />
+          <textarea
+            class="cuadro__Texto"
+            id="outPutText"
+            readonly
+            style="display: none"
+          ></textarea>
+        </div>
+      </div>
+
+      <div class="botones">
+        <button onclick="encriptar()">Encriptar</button>
+        <button onclick="desencriptar()">Desencriptar</button>
+        <button onclick="copiarTexto()">Copiar</button>
+      </div>
+      <div class="botones">
+        <button onclick="recargarPagina()">Reiniciar</button>
+      </div>
+    </div>
+    <footer class="footer">
+      Proyecto realizado por @Anderson_Moreno para Alura
+    </footer>
+    <script src="./app.js"></script>
+  </body>
+</html>
