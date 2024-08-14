@@ -21,6 +21,7 @@ El proyecto está organizado de la siguiente manera:
 ├── styles.css          # Estilos CSS para la apariencia de la aplicación
 ├── app.js              # Lógica de encriptación y desencriptación en JavaScript
 └── assets/             # Carpeta para las imágenes y otros recursos
+
 Cómo Usar
 Ingresar Texto: Escribe el texto que deseas encriptar en el cuadro de entrada.
 Encriptar o Desencriptar: Haz clic en el botón correspondiente para transformar el texto.
