@@ -16,7 +16,7 @@ function encriptar() {
 
 // función para desencriptar el texto
 function desencriptar() {
-    let textoEncriptado = document.getElementById("inputText").value; // Corregido "valvue" a "value"
+    let textoEncriptado = document.getElementById("inputText").value;
     let texto = textoEncriptado
         .replace(/enter/g, "e")
         .replace(/imes/g, "i")
